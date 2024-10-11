@@ -24,3 +24,26 @@ terraform.tfvars
 *.njsproj
 *.sln
 *.sw?
+
+
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.*
+
+# Archivos de backup generados por Terraform
+*.backup
+
+# Directorio de configuración local de Terraform
+.terraform/
+
+# Archivos de log de Terraform
+crash.log
+*.log
+
+# Planes de ejecución de Terraform
+*.tfplan
+
+# Archivos de variables sensibles
+*.tfvars
+*.tfvars.json
+*.txt
