@@ -48,4 +48,4 @@ crash.log
 *.tfvars.json
 *.txt
 
-*.tfstate
+*.tsbuildinfo
