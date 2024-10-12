@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - npm install -g pnpm
+      - pnpm install
+
+  pre_build:
+    commands:
+      - echo "Running linter..."
+      - pnpm run lint
+
+  build:
+    commands:
+      - echo "Building the React app..."
+      - pnpm run build
+
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'dist'
+  discard-paths: no
