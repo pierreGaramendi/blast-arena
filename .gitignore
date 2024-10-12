@@ -47,3 +47,5 @@ crash.log
 *.tfvars
 *.tfvars.json
 *.txt
+
+*.tfstate
