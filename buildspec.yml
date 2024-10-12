@@ -17,13 +17,13 @@ phases:
     commands:
       - echo "Building the React app..."
       - pnpm run build
-      - ls -la dist
+     
   post_build:
     commands:
       - echo "Build completed on `date`"
+      - ls -la dist
 
 artifacts:
   files:
     - 'dist/**/*'
-  base-directory: 'dist'
   discard-paths: yes
