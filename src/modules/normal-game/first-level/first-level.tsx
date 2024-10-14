@@ -1,7 +1,4 @@
-type Props = {
- 
-}
-export const FirstLevel = ({}: Props) => {
+export const FirstLevel = () => {
     return ( 
         <div>
             FirstLevel
